@@ -3,10 +3,10 @@ A simple hello-world web application with a stateful backend, built using Docker
 
 # Architecture:
 
-            +-------------------+         +------------------------+
-  client -> |  web (Flask app)  |  -->    |  redis (visit counter) |
-            |  stateless        |         |  stateful + volume     |
-            +-------------------+         +------------------------+
-                    |                               |
-              app.config.env                    redis-data
-              + .env (secret)                  (persistent volume)
+                        +-------------------+         +------------------------+
+             client -> |  web (Flask app)  |  -->    |  redis (visit counter) |
+                        |  stateless        |         |  stateful + volume     |
+                        +-------------------+         +------------------------+
+                                |                               |
+                          app.config.env                    redis-data
+                          + .env (secret)                  (persistent volume)
