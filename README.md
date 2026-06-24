@@ -10,3 +10,6 @@ A simple hello-world web application with a stateful backend, built using Docker
                                 |                               |
                           app.config.env                    redis-data
                           + .env (secret)                  (persistent volume)
+
+    web — a stateless Flask app served by gunicorn. Later: a Deployment + Service.
+    redis — a stateful key/value store that holds a visit counter on a persistent volume. Later: a StatefulSet + PersistentVolumeClaim.
