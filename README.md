@@ -1,0 +1,2 @@
+# starter-app
+A simple hello-world web application with a stateful backend, built using Docker and Docker Compose. Designed as a Kubernetes support training project, it serves as a starting point for converting a containerized application into Kubernetes resources such as Deployments, Services, ConfigMaps, Secrets, and StatefulSets with persistent storage.
